@@ -1,5 +1,16 @@
 # pieptuta.news
 
+welcome to pieptuta's news website.
+
+## writing content
+it's a simple flow:
+- fork this project
+- write content inside `content/articles` using markdown
+- create a pull request
+- wait for my approval && you're done.
+
+it's that ez.
+
 ## Build Setup
 
 ```bash
