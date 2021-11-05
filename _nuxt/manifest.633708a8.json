@@ -1,7 +1,7 @@
 {
   "name": "pieptuta.news",
   "short_name": "pieptuta.news",
-  "description": "## Build Setup",
+  "description": "welcome to pieptuta's news website.",
   "icons": [
     {
       "src": "/pieptuta.news/_nuxt/icons/icon_64x64.e3e9fb.png",
