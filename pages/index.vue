@@ -95,20 +95,32 @@
           Ultimele știri
         </h3>
 
-        <article v-for="(article, index) in news" :key="index" class="blog-post">
-          <h2 class="blog-post-title">
-            {{ article.title }}
-          </h2>
-          <p class="blog-post-meta">
-            {{ dateFormat(article.createdAt) }}
-          </p>
-
-          <p>{{ article.description }}</p>
-
-          <nuxt-link :to="{ name: 'article-slug', params: { slug: article.slug }}">
-            Citește mai mult...
-          </nuxt-link>
-        </article>
+        <div
+          v-for="(article, index) in news"
+          :key="index"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">
+              {{ article.title }}
+            </h3>
+            <div class="mb-1 text-muted">
+              {{ dateFormat(article.createdAt) }}
+            </div>
+            <p class="card-text mb-auto">
+              {{ article.description }}
+            </p>
+            <nuxt-link :to="{ name: 'article-slug', params: { slug: article.slug }}">
+              Citește mai mult...
+            </nuxt-link>
+          </div>
+          <div
+            v-if="article.coverImage"
+            class="col-auto d-none d-lg-block"
+          >
+            <div class="article-image" :style="{backgroundImage: `url(/pieptuta.news/article/${article.coverImage})`}" />
+          </div>
+        </div>
       </div>
 
       <div class="col-md-4">
@@ -147,7 +159,7 @@ import { DateTime } from 'luxon'
 
 export default Vue.extend({
   async asyncData ({ $content }) {
-    return { news: await $content('articles').fetch() }
+    return { news: await $content('articles').sortBy('createdAt', 'desc').fetch() }
   },
   data (): any {
     return {
@@ -165,7 +177,7 @@ export default Vue.extend({
   },
   methods: {
     dateFormat (date: string): string {
-      return DateTime.fromISO(date).toFormat('dd MMMM yyyy')
+      return DateTime.fromISO(date).toFormat('dd MMMM yyyy, HH:mm')
     },
     buildLink (link: any) {
       switch (link.icon) {
@@ -179,7 +191,7 @@ export default Vue.extend({
 
 <style lang="scss">
 .bg-pieptuta {
-  background-image: url("~/assets/img/pieptuta.jpg");
+  background-image: url("~/assets/img/featured/pieptuta.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

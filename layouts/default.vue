@@ -5,8 +5,8 @@
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a
-              v-for="link in twitchLinks"
-              :key="link"
+              v-for="(link, index) in twitchLinks"
+              :key="index"
               class="link-secondary twitch-links"
               :href="buildLink(link)"
               target="_blank"
