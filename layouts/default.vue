@@ -64,7 +64,7 @@
 
     <footer class="blog-footer">
       <p>
-        made with <fa class="text-danger" icon="heart" /> by <a href="https://github.com/hktr92" target="_blank"><fa :icon="['fab','github']" /> hacktor_92</a> for <a href="https://twitch.tv/iris_danciu" target="_blank"><fa :icon="['fab','twitch']" /> iris_danciu</a>.
+        made with <fa class="text-danger" icon="heart" /> by <a href="https://instagram.com/hacktor_92/" target="_blank"><fa :icon="['fab','github']" /> hacktor_92</a> for <a href="https://twitch.tv/iris_danciu" target="_blank"><fa :icon="['fab','twitch']" /> iris_danciu</a>.
       </p>
       <p>
         <a href="#">Back to top</a>

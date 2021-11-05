@@ -105,7 +105,9 @@
 
           <p>{{ article.description }}</p>
 
-          <a :href="`/article/${article.slug}`">Citește mai mult...</a>
+          <nuxt-link :to="{ name: 'article-slug', params: { slug: article.slug }}">
+            Citește mai mult...
+          </nuxt-link>
         </article>
       </div>
 
@@ -157,8 +159,7 @@ export default Vue.extend({
       return [
         { icon: 'twitch', value: 'iris_danciu' },
         { icon: 'instagram', value: 'theknifelady' },
-        { icon: 'instagram', value: 'irisdanciuoutfits' },
-        { icon: 'instagram', value: 'hacktor_92' }
+        { icon: 'instagram', value: 'irisdanciuoutfits' }
       ]
     }
   },

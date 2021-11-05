@@ -20,7 +20,7 @@ import Vue from 'vue'
 import { DateTime } from 'luxon'
 
 export default Vue.extend({
-  name: '_slug.vue',
+  name: 'Article',
   async asyncData ({ $content, params }) {
     const article = await $content(`articles/${params.slug}`).fetch()
 
