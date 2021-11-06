@@ -16,7 +16,8 @@
             {{ dateFormat(article.createdAt) }}
           </p>
 
-          <nuxt-content :document="article" />
+          <!--          <nuxt-content :document="article" />-->
+          <div v-html="article.content" />
           <hr>
           <nuxt-link :to="{name: 'index'}">
             <fa icon="arrow-left" /> Înapoi pe prima pagină.
@@ -36,12 +37,13 @@ import { DateTime } from 'luxon'
 
 export default Vue.extend({
   name: 'Article',
-  async asyncData ({ $content, params }) {
-    const article = await $content(`articles/${params.slug}`).fetch()
-
-    return {
-      article
-    }
+  async asyncData ({ $http, params }) {
+    return { article: (await $http.$get<any>(`/article/${params.slug}`)) }
+    // const article = await $content(`articles/${params.slug}`).fetch()
+    //
+    // return {
+    //   article
+    // }
   },
   data () {
     return {

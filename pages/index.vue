@@ -96,8 +96,8 @@
         </h3>
 
         <div
-          v-for="(article, index) in news"
-          :key="index"
+          v-for="(article) in news"
+          :key="article.id"
           class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
         >
           <div class="col p-4 d-flex flex-column position-static">
@@ -137,8 +137,8 @@ import Vue from 'vue'
 import { DateTime } from 'luxon'
 
 export default Vue.extend({
-  async asyncData ({ $content }) {
-    return { news: await $content('articles').sortBy('createdAt', 'desc').fetch() }
+  async asyncData ({ $http }) {
+    return { news: (await $http.$get<any>('/articles')).data }
   },
   data (): any {
     return {

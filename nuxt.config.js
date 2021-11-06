@@ -29,6 +29,10 @@ export default {
     mode: 'hash'
   },
 
+  http: {
+    baseURL: 'http://localhost:8000'
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -64,7 +68,8 @@ export default {
           icons: ['fab']
         }
       ]
-    }]
+    }],
+    '@nuxt/http'
   ],
 
   fontawesome: {

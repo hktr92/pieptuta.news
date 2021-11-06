@@ -1,8 +1,14 @@
 <template>
-  <div v-if="clip" class="p-4 mb-3 bg-pieptuta-white rounded">
-    <div class="d-flex flex-row justify-content-between">
+  <div class="p-4 mb-3 bg-pieptuta-white rounded">
+    <p v-if="$fetchState.pending">
+      <b-spinner variant="primary" type="grow" label="Se încarcă citatele motivaționale..." />
+    </p>
+    <p v-else-if="$fetchState.error">
+      Ow man! Am rămas fără citate motivaționale! :(
+    </p>
+    <div v-else class="d-flex flex-row justify-content-between">
       <h4>
-        Random Twitch clip
+        {{ widget.title }}
       </h4>
       <b-btn
         v-b-tooltip
@@ -34,8 +40,13 @@ export default Vue.extend({
   name: 'TwitchClip',
   data (): any {
     return {
+      widget: {},
       clip: null
     }
+  },
+  async fetch () {
+    this.widget = await this.$http.$get('/widget/twitch-clip')
+    this.pickRandomClip()
   },
   computed: {
     buildClipUrl (): string {
@@ -60,12 +71,9 @@ export default Vue.extend({
       ]
     }
   },
-  mounted () {
-    this.pickRandomClip()
-  },
   methods: {
     pickRandomClip (): void {
-      this.clip = sample(this.clips)
+      this.clip = sample(this.widget.data)
     }
   }
 })
