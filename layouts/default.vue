@@ -19,7 +19,12 @@
               class="blog-header-logo text-dark"
               :to="{name: 'index'}"
             >
-              pieptuta.news
+              <img
+                alt="pieptuta.news logo"
+                :src="require('~/assets/img/logo.png')"
+                class="logo-responsive"
+              >
+              pieptuța.news
             </nuxt-link>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
@@ -104,6 +109,10 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+.logo-responsive {
+  height: 40px;
+  width: auto;
+}
 .twitch-links {
     &:not(:last-child):after {
       content: " | "
