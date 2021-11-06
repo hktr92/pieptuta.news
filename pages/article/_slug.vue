@@ -9,9 +9,9 @@
 
     <nuxt-content :document="article" />
     <hr>
-    <a href="/">
+    <nuxt-link :to="{name: 'index'}">
       <fa icon="arrow-left" /> Înapoi pe prima pagină.
-    </a>
+    </nuxt-link>
   </article>
 </template>
 

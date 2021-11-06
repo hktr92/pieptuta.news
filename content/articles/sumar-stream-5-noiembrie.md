@@ -14,19 +14,24 @@ tl;dr: o poți urmări pe Iris aiciea: <fa :icon="['fab','twitch']"></fa> [iris_
 Stream-ul lui Iris din data de 5 noiembrie a fost unul plin de lacrimi, întrucât ne-a fost dor de ea.
 
 Iată un sumar:
-- a discutat despre lipsa ei pe stream
+- s-a discutat despre lipsa ei pe stream
+- restaurantul lui victor slav si preturile ASTRONOMICE pe care le cere
 - pauză de pipi + audiție Gheorghe Crăciun
-- s-a uitat la văru vanu
-- m-am jucat cu părul ei
-- s-a uitat mai departe la văru vanu iar eu am dormit
+- s-a vizionat content calitativ marca văru vanu + pieptuta moment
 - irisdanciuoutfits a postat pe instagram
-- s-a uitat la H2O
-- milliaaa a făcut un edit
-- s-a uitat mai departe la H2O
+- vizionare serial H2O
+- milliaaa a făcut un edit formidabil
 - încheiere
 
 ## Marele mister al Twitch-ului românesc: de ce a lipsit Iris?
 Iris a fost ocupată cu viața ei personală. Printre lacrimi de bucurie și dor, a declarat că a decis să ia o pauză de la Twitch să facă „social media detox” -- adică, a luat o pauză de la internet. Voia să reînceapă stream-ul mai devreme cu o săptămână, dar alergia ei la ambrozie a împiedicat-o să poată face stream.
+
+## Restaurantul PREMIUM al lui Victor Slav
+Am inceput stream-ul decent si cinstit cu o stire SOCANTA: Victor Slav, prezentatorul de rezerva „Bravo ai Stil!”, o duce greu in pandemie, declara un articol media. Acelasi trust media il acuza pe Victor Slav ca are preturi ASTRONOMICE si, pentru o omleta din 3 ingrediente, are pretentia sa ceara SOCANTUL PRET DE 48 LEI. 
+
+Ce este si mai SOCANT este faptul ca pentru niste hamsii cere 40 lei iar pentru o SINGURA PORTIE DE CARTOFI PIURE CU SNITEL VIENEZ cere exorbitantul pret de 69 lei.
+
+Incredibil, formidabil asa ceva. Oricum, asemenea trusturi media nu cunosc ce e un salam de 38 lei kilogramul...
 
 ## Audiție Gheorghe Crăciun
 Ca de obicei, pentru pauza de pipi am avut clasica audiție a lui Gheorghe Crăciun - BUI BUI BUI
@@ -54,13 +59,15 @@ După acest moment de Pieptuța, s-a continuat vizionarea lui văru vanu.
 
 ## Continuarea serialului cu sirene
 
-Am continuat cu episodul 32 și 33 din acest serial minunat al pensionarilor. Era vorba despre Luis fiind simp-uit de roșcovana de Charlotte (ew...). Nimic de spus mai mult aici să nu se dea spoilere.
+Am continuat cu vizionarea episodului 32 și 33 din acest serial minunat al pensionarilor. Era vorba despre Luis fiind simp-uit de roșcovana de Charlotte (ew...). Nimic de spus mai mult aici să nu se dea spoilere.
 
 ## Edit făcut de milliaaa
 
 Desigur, înainte de finalizarea vizionarii de H2O, moderatorul nostru drag, milliaaa, a venit cu un edit formidabil pentru Iris:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cunzyZSqXDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Iata ca se poate! Sursele spun ca acest video trebuia sa fie de 2 ore dar milliaaa „s-a certat cu domnu youtube”. Al naibii de restrictii...
 
 ## Încheiere
 Iris a terminat stream-ul relativ rapid, după mai bine de 3 ore și jumătate de live stream. A anunțat că va urma să anunțe pe <fa :icon="['fab','discord']"></fa> [Discord](https://discord.gg/YcmuMJrtW8) și <fa :icon="['fab','instagram']"></fa> [Instagram](https://www.instagram.com/theknifelady/) când va avea loc stream-ul următor, în cursul săptămânii viitoare.
@@ -71,4 +78,4 @@ Dacă vrei să vezi întregul stream, intră pe twitch la <fa :icon="['fab','twi
 
 Autor: hacktor
 Vârstă: 2 pet-uri de bere băute
-Despre: ce plm să spun?
+Despre: nu mai avem.
