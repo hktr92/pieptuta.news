@@ -16,21 +16,21 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import { sample } from 'lodash'
 import { isNumber } from 'lodash-es'
 
 export default Vue.extend({
   name: 'DailyQuote',
-  data (): any {
+  data () {
     return {
       quote: null,
       timer: null
     }
   },
   computed: {
-    quotes (): any[] {
+    quotes () {
       return [
         { text: 'BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI', author: 'Gheorghe Crăciun' },
         { text: 'MEOW MEOW MEOW!!', author: 'Pieptuța' },
@@ -44,12 +44,17 @@ export default Vue.extend({
     }
   },
   mounted () {
-    this.quote = sample(this.quotes)
-    this.timer = setInterval(() => { this.quote = sample(this.quotes) }, 10 * 1000)
+    this.pickRandomQuote()
+    this.timer = setInterval(this.pickRandomQuote.bind(this), 10 * 1000)
   },
   beforeUnmount () {
     if (isNumber(this.timer)) {
-      setInterval(this.timer)
+      clearInterval(this.timer)
+    }
+  },
+  methods: {
+    pickRandomQuote () {
+      this.quote = sample(this.quotes)
     }
   }
 })
