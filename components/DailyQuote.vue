@@ -39,7 +39,11 @@ export default Vue.extend({
         { text: 'Băgăm un bui cinstit', author: 'iris_danciu' },
         { text: 'Pulă seara, stimați pensionari!', author: 'iris_danciu' },
         { text: 'Hei păpușhe, mă lași să înot la tine ăn pisdă??', author: 'iris_danciu' },
-        { text: 'F for biscuite', author: 'hacktor_92' }
+        { text: 'F for biscuite', author: 'hacktor_92' },
+        { text: 'mmm... muna', author: 'văru vanu (out of context)' },
+        { text: 'Response Message', author: 'StreamElements' },
+        { text: 'Porodici', author: 'un ghinionist' },
+        { text: 'iris esti superba', author: 'tot chatu\'' }
       ]
     }
   },
