@@ -90,7 +90,7 @@
     <!--    </div>-->
 
     <div class="row g-5">
-      <div class="col-md-8">
+      <div class="col-md-7">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">
           Ultimele știri
         </h3>
@@ -123,31 +123,8 @@
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
-          <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fst-italic">
-              Despre
-            </h4>
-            <p class="mb-0">
-              Cea mai bună și credibilă sursă de informare pe care o poți avea.
-            </p>
-          </div>
-        </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">
-            Link-uri sociale
-          </h4>
-          <ol class="list-unstyled">
-            <li v-for="link in links" :key="link.value">
-              <a :href="buildLink(link)">
-                <fa :icon="['fab',link.icon]" />
-                {{ link.value }}
-              </a>
-            </li>
-          </ol>
-        </div>
+      <div class="col-md-5">
+        <Sidebar />
       </div>
     </div>
   </div>
@@ -166,24 +143,9 @@ export default Vue.extend({
       news: []
     }
   },
-  computed: {
-    links (): any[] {
-      return [
-        { icon: 'twitch', value: 'iris_danciu' },
-        { icon: 'instagram', value: 'theknifelady' },
-        { icon: 'instagram', value: 'irisdanciuoutfits' }
-      ]
-    }
-  },
   methods: {
     dateFormat (date: string): string {
       return DateTime.fromISO(date).toFormat('dd MMMM yyyy, HH:mm')
-    },
-    buildLink (link: any) {
-      switch (link.icon) {
-        case 'twitch': return `https://twitch.tv/${link.value}`
-        case 'instagram': return `https://instagram.com/${link.value}`
-      }
     }
   }
 })

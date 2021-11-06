@@ -1,18 +1,25 @@
 <template>
-  <article class="blog-post">
-    <h2 class="blog-post-title">
-      {{ article.title }}
-    </h2>
-    <p class="blog-post-meta">
-      {{ dateFormat(article.createdAt) }}
-    </p>
+  <div class="row g-5">
+    <div class="col-md-7">
+      <article class="blog-post">
+        <h2 class="blog-post-title">
+          {{ article.title }}
+        </h2>
+        <p class="blog-post-meta">
+          {{ dateFormat(article.createdAt) }}
+        </p>
 
-    <nuxt-content :document="article" />
-    <hr>
-    <nuxt-link :to="{name: 'index'}">
-      <fa icon="arrow-left" /> Înapoi pe prima pagină.
-    </nuxt-link>
-  </article>
+        <nuxt-content :document="article" />
+        <hr>
+        <nuxt-link :to="{name: 'index'}">
+          <fa icon="arrow-left" /> Înapoi pe prima pagină.
+        </nuxt-link>
+      </article>
+    </div>
+    <div class="col-md-5">
+      <Sidebar />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">

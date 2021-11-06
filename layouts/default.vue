@@ -15,7 +15,12 @@
             </a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="/">pieptuta.news</a>
+            <nuxt-link
+              class="blog-header-logo text-dark"
+              :to="{name: 'index'}"
+            >
+              pieptuta.news
+            </nuxt-link>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <!--            <a class="link-secondary" href="#" aria-label="Search">-->
@@ -64,7 +69,8 @@
 
     <footer class="blog-footer">
       <p>
-        made with <fa class="text-danger" icon="heart" /> by <a href="https://instagram.com/hacktor_92/" target="_blank"><fa :icon="['fab','github']" /> hacktor_92</a> for <a href="https://twitch.tv/iris_danciu" target="_blank"><fa :icon="['fab','twitch']" /> iris_danciu</a>.
+        made with <fa class="text-danger" icon="heart" /> by <a href="https://instagram.com/hacktor_92/" target="_blank"><fa :icon="['fab','instagram']" /> hacktor_92</a> for <a href="https://twitch.tv/iris_danciu" target="_blank"><fa :icon="['fab','twitch']" /> iris_danciu</a>.<br>
+        <a href="https://github.com/hktr92/pieptuta.news" target="_blank"><fa :icon="['fab','github']" /> source code</a>
       </p>
       <p>
         <a href="#">Back to top</a>
