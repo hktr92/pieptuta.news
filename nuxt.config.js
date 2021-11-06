@@ -25,7 +25,8 @@ export default {
   ],
 
   router: {
-    base: '/pieptuta.news/'
+    base: '/pieptuta.news/',
+    mode: 'hash'
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
