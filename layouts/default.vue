@@ -2,17 +2,21 @@
   <div>
     <div class="container">
       <header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="row">
           <div class="col-4 pt-1">
-            <a
+            <div
               v-for="(link, index) in twitchLinks"
               :key="index"
-              class="link-secondary twitch-links"
-              :href="buildLink(link)"
-              target="_blank"
             >
-              <fa :icon="['fab',link.icon]" /> {{ link.value }}
-            </a>
+              <fa :icon="['fab',link.icon]" />
+              <a
+                class="link-secondary"
+                :href="buildLink(link)"
+                target="_blank"
+              >
+                {{ link.value }}
+              </a>
+            </div>
           </div>
           <div class="col-4 text-center">
             <nuxt-link
@@ -28,6 +32,7 @@
             </nuxt-link>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
+            <p>{{ clockNow }}</p>
             <!--            <a class="link-secondary" href="#" aria-label="Search">-->
             <!--              <svg-->
             <!--                xmlns="http://www.w3.org/2000/svg"-->
@@ -74,8 +79,8 @@
 
     <footer class="blog-footer">
       <p>
-        made with <fa class="text-danger" icon="heart" /> by <a href="https://instagram.com/hacktor_92/" target="_blank"><fa :icon="['fab','instagram']" /> hacktor_92</a> for <a href="https://twitch.tv/iris_danciu" target="_blank"><fa :icon="['fab','twitch']" /> iris_danciu</a>.<br>
-        <a href="https://github.com/hktr92/pieptuta.news" target="_blank"><fa :icon="['fab','github']" /> source code</a>
+        made with <fa class="text-danger" icon="heart" /> by <fa :icon="['fab','instagram']" /> <a href="https://instagram.com/hacktor_92/" target="_blank">hacktor_92</a> for <fa :icon="['fab','twitch']" /> <a href="https://twitch.tv/iris_danciu" target="_blank">iris_danciu</a>.<br>
+        <fa :icon="['fab','github']" /> <a href="https://github.com/hktr92/pieptuta.news" target="_blank">source code</a>
       </p>
       <p>
         <a href="#">Back to top</a>
@@ -86,9 +91,17 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { DateTime } from 'luxon'
+import { isNumber } from 'lodash-es'
 
 export default Vue.extend({
   name: 'Default',
+  data (): any {
+    return {
+      clockNow: '',
+      clockTimer: null
+    }
+  },
   computed: {
     twitchLinks (): any[] {
       return [
@@ -97,7 +110,18 @@ export default Vue.extend({
       ]
     }
   },
+  mounted () {
+    this.clockTimer = setInterval(this.updateClock.bind(this), 1000)
+  },
+  beforeDestroy (): void {
+    if (isNumber(this.clockTimer)) {
+      clearInterval(this.clockTimer)
+    }
+  },
   methods: {
+    updateClock (): void {
+      this.clockNow = DateTime.now().toFormat('dd.MM.yyyy, HH:mm:ss')
+    },
     buildLink (link: any) {
       switch (link.icon) {
         case 'twitch': return `https://twitch.tv/${link.value}`

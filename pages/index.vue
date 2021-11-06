@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark bg-pieptuta">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-pieptuta-secondary bg-pieptuta">
       <div class="col-md-6 px-0">
-        <h1 class="display-4 fst-italic">
+        <h1 class="display-4">
           Bun venit pe pieptuța.news
         </h1>
         <p class="lead my-3">
@@ -102,7 +102,9 @@
         >
           <div class="col p-4 d-flex flex-column position-static">
             <h3 class="mb-0">
-              {{ article.title }}
+              <nuxt-link :to="{ name: 'article-slug', params: { slug: article.slug }}">
+                {{ article.title }}
+              </nuxt-link>
             </h3>
             <div class="mb-1 text-muted">
               {{ dateFormat(article.createdAt) }}

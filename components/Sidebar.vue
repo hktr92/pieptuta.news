@@ -1,7 +1,7 @@
 <template>
   <div class="position-sticky" style="top: 2rem;">
     <DailyQuote />
-    <div class="p-4 mb-3 bg-light rounded">
+    <div class="p-4 mb-3 bg-pieptuta-white rounded">
       <h4 class="fst-italic">
         Despre
       </h4>
@@ -18,8 +18,8 @@
       </h4>
       <ol class="list-unstyled">
         <li v-for="link in links" :key="link.value">
+          <fa :icon="['fab',link.icon]" />
           <a :href="buildLink(link)">
-            <fa :icon="['fab',link.icon]" />
             {{ link.value }}
           </a>
         </li>

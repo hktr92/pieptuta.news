@@ -1,4 +1,21 @@
+$pieptuta-yellow: #d9954e; // persian orange
+$pieptuta-black: #2F2820;  // bistre
+$pieptuta-white: #E2C397;  // gold crayola
+$pieptuta-accent: #c5ab88; // light french beige
+$pieptuta-eye: #5e3509;    // pullman brown
+
+$primary: darken($pieptuta-yellow, 25%) !default;
+$dark: $pieptuta-black !default;
+
 @import "~bootstrap/scss/bootstrap.scss";
+
+.bg-pieptuta-secondary {
+  background-color: $pieptuta-black;
+}
+
+.bg-pieptuta-white {
+  background-color: lighten($pieptuta-white, 20%);
+}
 
 /* stylelint-disable selector-list-comma-newline-after */
 

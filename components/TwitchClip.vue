@@ -1,5 +1,5 @@
 <template>
-  <div v-if="clip" class="p-4 mb-3 bg-light rounded">
+  <div v-if="clip" class="p-4 mb-3 bg-pieptuta-white rounded">
     <div class="d-flex flex-row justify-content-between">
       <h4>
         Random Twitch clip
