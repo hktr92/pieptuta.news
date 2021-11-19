@@ -34,7 +34,7 @@ export default Vue.extend({
       return [
         { text: 'BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI', author: 'Gheorghe Crăciun' },
         { text: 'DA DA DA OTELU E VIATA MEA', author: 'autor necunoscut' },
-        { text: 'Te urăsc, pe urmă te iubesc, iar te urăsc, pe urmă iar te iubesc...', author: 'Gheorghe Crăciun' },
+        { text: 'Te urăsc... te iubesc, te urăsc... te iubesc, te urăsc...', author: 'Gheorghe Crăciun (într-o buclă infinită)' },
         { text: 'Băgăm un bui cinstit', author: 'iris_danciu' },
         { text: 'Pulă seara, stimați pensionari!', author: 'iris_danciu' },
         { text: 'Hei păpușhe, mă lași să înot la tine ăn pisdă??', author: 'iris_danciu' },
@@ -44,7 +44,10 @@ export default Vue.extend({
         { text: 'Porodici', author: 'un ghinionist' },
         { text: 'iris esti superba', author: 'tot chatu\'' },
         { text: 'Sănătate mintală și noroc în dragoste!', author: 'comandă de pe twitch' },
-        { text: 'PENTRU CA MANEAUA ESTE MUZICA OAMENILOR! MANELELE SUNT FACUTE PENTRU OAMENI IN PULA MEA! DACA OAMENILOR LE PLAC MANELELE, INSEAMNA CA MANELELE TREBUIE SA FIE ASCULTATE! AI INNEBUNIT?! DOAR PENTRU CA... DOAR PENTRU CA NU-TI PLACE TIE NU STIU CE FILM INDIAN DE KKT AI VAZUT TU, DE ASTA NU TREBUIE SA ASCULTE OAMENII MANELE?! AI INNEBUNIT?! AI INNEBUNIT?! DACA OAMENII VOR SA ASCULTE MANELELE, LASA-I SA ASCULTE MANELELE, MORTII TAI!', author: 'NichitaLiga' }
+        { text: 'PENTRU CA MANEAUA ESTE MUZICA OAMENILOR! MANELELE SUNT FACUTE PENTRU OAMENI IN PULA MEA! DACA OAMENILOR LE PLAC MANELELE, INSEAMNA CA MANELELE TREBUIE SA FIE ASCULTATE! AI INNEBUNIT?! DOAR PENTRU CA... DOAR PENTRU CA NU-TI PLACE TIE NU STIU CE FILM INDIAN DE KKT AI VAZUT TU, DE ASTA NU TREBUIE SA ASCULTE OAMENII MANELE?! AI INNEBUNIT?! AI INNEBUNIT?! DACA OAMENII VOR SA ASCULTE MANELELE, LASA-I SA ASCULTE MANELELE, IN MORTII TAI!', author: 'NichitaLiga' },
+        { text: 'Formidabil, vom reveni', author: 'Dan Diaconescu Direct' },
+        { text: 'Unde esti tu, branza del?', author: 'iris_danciu (cover branza del)' },
+        { text: 'undefined', author: 'undefined' }
       ]
     }
   },
