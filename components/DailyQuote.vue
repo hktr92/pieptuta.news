@@ -43,7 +43,8 @@ export default Vue.extend({
         { text: 'Response Message', author: 'StreamElements' },
         { text: 'Porodici', author: 'un ghinionist' },
         { text: 'iris esti superba', author: 'tot chatu\'' },
-        { text: 'Sănătate mintală și noroc în dragoste!', author: 'comandă de pe twitch' }
+        { text: 'Sănătate mintală și noroc în dragoste!', author: 'comandă de pe twitch' },
+        { text: 'PENTRU CA MANEAUA ESTE MUZICA OAMENILOR! MANELELE SUNT FACUTE PENTRU OAMENI IN PULA MEA! DACA OAMENILOR LE PLAC MANELELE, INSEAMNA CA MANELELE TREBUIE SA FIE ASCULTATE! AI INNEBUNIT?! DOAR PENTRU CA... DOAR PENTRU CA NU-TI PLACE TIE NU STIU CE FILM INDIAN DE KKT AI VAZUT TU, DE ASTA NU TREBUIE SA ASCULTE OAMENII MANELE?! AI INNEBUNIT?! AI INNEBUNIT?! DACA OAMENII VOR SA ASCULTE MANELELE, LASA-I SA ASCULTE MANELELE, MORTII TAI!', author: 'NichitaLiga' }
       ]
     }
   },
