@@ -47,7 +47,10 @@ export default Vue.extend({
         { text: 'PENTRU CA MANEAUA ESTE MUZICA OAMENILOR! MANELELE SUNT FACUTE PENTRU OAMENI IN PULA MEA! DACA OAMENILOR LE PLAC MANELELE, INSEAMNA CA MANELELE TREBUIE SA FIE ASCULTATE! AI INNEBUNIT?! DOAR PENTRU CA... DOAR PENTRU CA NU-TI PLACE TIE NU STIU CE FILM INDIAN DE KKT AI VAZUT TU, DE ASTA NU TREBUIE SA ASCULTE OAMENII MANELE?! AI INNEBUNIT?! AI INNEBUNIT?! DACA OAMENII VOR SA ASCULTE MANELELE, LASA-I SA ASCULTE MANELELE, IN MORTII TAI!', author: 'NichitaLiga' },
         { text: 'Formidabil, vom reveni', author: 'Dan Diaconescu Direct' },
         { text: 'Unde esti tu, branza del?', author: 'iris_danciu (cover branza del)' },
-        { text: 'undefined', author: 'undefined' }
+        { text: 'undefined', author: 'undefined' },
+        { text: 'haideti la gimnastica de seara si la un ceai de menta cu miere si lamaie', author: 'pensionara mdantonia' },
+        { text: 'mi-a căzut pula și-a plecat în altă țară', author: 'iris_danciu' },
+        { text: 'Lucru bun, lucru fain, potop', author: 'varu vanu' }
       ]
     }
   },
