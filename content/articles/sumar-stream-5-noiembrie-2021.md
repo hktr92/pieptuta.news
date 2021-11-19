@@ -1,6 +1,8 @@
 ---
-title: Sumar stream 5 noiembrie
-coverImage: 20211105-iris-face-twitch.png
+title: Sumar stream 5 noiembrie 2021
+coverImage: 20211105-sumar-stream.png
+publishedAt: 2021-11-06T11:30:00Z
+draft: no
 ---
 
 Dacă ai ratat stream-ul lui Iris, iată ce ai ratat.

@@ -33,7 +33,6 @@ export default Vue.extend({
     quotes (): any[] {
       return [
         { text: 'BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI BUI', author: 'Gheorghe Crăciun' },
-        { text: 'MEOW MEOW MEOW!!', author: 'Pieptuța' },
         { text: 'DA DA DA OTELU E VIATA MEA', author: 'autor necunoscut' },
         { text: 'Te urăsc, pe urmă te iubesc, iar te urăsc, pe urmă iar te iubesc...', author: 'Gheorghe Crăciun' },
         { text: 'Băgăm un bui cinstit', author: 'iris_danciu' },
@@ -43,7 +42,8 @@ export default Vue.extend({
         { text: 'mmm... muna', author: 'văru vanu (out of context)' },
         { text: 'Response Message', author: 'StreamElements' },
         { text: 'Porodici', author: 'un ghinionist' },
-        { text: 'iris esti superba', author: 'tot chatu\'' }
+        { text: 'iris esti superba', author: 'tot chatu\'' },
+        { text: 'Sănătate mintală și noroc în dragoste!', author: 'comandă de pe twitch' }
       ]
     }
   },

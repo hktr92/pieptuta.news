@@ -107,7 +107,7 @@
               </nuxt-link>
             </h3>
             <div class="mb-1 text-muted">
-              {{ dateFormat(article.createdAt) }}
+              {{ dateFormat(article.publishedAt) }}
             </div>
             <p class="card-text mb-auto">
               {{ article.description }}
@@ -138,7 +138,7 @@ import { DateTime } from 'luxon'
 
 export default Vue.extend({
   async asyncData ({ $content }) {
-    return { news: await $content('articles').sortBy('createdAt', 'desc').fetch() }
+    return { news: await $content('articles').where({ draft: 'no' }).sortBy('publishedAt', 'desc').fetch() }
   },
   data (): any {
     return {

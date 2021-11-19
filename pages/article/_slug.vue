@@ -13,7 +13,7 @@
             {{ article.title }}
           </h2>
           <p class="blog-post-meta">
-            {{ dateFormat(article.createdAt) }}
+            {{ dateFormat(article.publishedAt) }}
           </p>
 
           <nuxt-content :document="article" />
@@ -37,7 +37,7 @@ import { DateTime } from 'luxon'
 export default Vue.extend({
   name: 'Article',
   async asyncData ({ $content, params }) {
-    const article = await $content(`articles/${params.slug}`).fetch()
+    const article = await $content(`articles/${params.slug}`).where({ draft: 'no' }).fetch()
 
     return {
       article
